@@ -1,12 +1,101 @@
-h1 {
-    color: #27aedb;
+/* src/App.css */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f7f7f7;
+    color: #333;
+  }
+  
+  .title {
     text-align: center;
-    }
-    
-
-button{
-    color: #27aedb;
-    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .title h2 {
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+  }
+  
+  .underline {
+    width: 5rem;
+    height: 0.25rem;
+    background: #c59d5f;
+    margin: 0.5rem auto;
+  }
+  
+  .categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+  
+  .filter-btn {
+    background: transparent;
+    border-color: transparent;
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin: 0 0.5rem;
+    color: #c59d5f;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  
+  .filter-btn:hover {
+    color: #c59d5f;
+    box-shadow: 0 2px #c59d5f;
+  }
+  
+  .dish-list {
+    display: flex;
+    gap: 5rem;
+    background-color: #333;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-}
+    overflow-x: auto;
+    height: 450px; 
+  }
+  
+  .dish-item {
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #5b5b5b;
+    color: #fff;
+    height: 350px;
+    width: 400px;
+  }
+  
+  .dish-photo {
+    width: 40%;
+    display: block;
+    border-radius: 0.25rem;
+    object-fit: cover;
+  }
+  
+  .dish-info {
+    text-align: left;
+  }
+  
+  .dish-info header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px dotted #617d98;
+  }
+  
+  .price {
+    color: #c59d5f;
+  }
+  
+  .dish-text {
+    margin-bottom: 0;
+    padding-top: 0.5rem;
+  }
+  
